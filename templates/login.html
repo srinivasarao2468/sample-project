@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<section class="section">
+    <h2 class="section__title">Login</h2>
+    <form action="/login" method="POST" class="form">
+        <label for="username" class="form__label">Username:</label><br>
+        <input type="text" id="username" name="username" required class="form__input"><br>
+        <label for="password" class="form__label">Password:</label><br>
+        <input type="password" id="password" name="password" required class="form__input"><br><br>
+        <input type="submit" value="Login" class="form__button">
+    </form>
+</section>
+{% endblock %}

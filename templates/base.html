@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Your Application{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="header__title">Java Home Application</h1>
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="/" class="header__nav-link">Home</a></li>
+            <li class="header__nav-item"><a href="/signup" class="header__nav-link">Sign Up</a></li>
+            <li class="header__nav-item"><a href="/login" class="header__nav-link">Login</a></li>
+            <!-- Include additional navigation links here -->
+        </ul>
+    </nav>
+</header>
+
+<main>
+    {% block content %}
+    <!-- Content specific to each page will be inserted here -->
+    {% endblock %}
+</main>
+
+<footer class="footer">
+    <p class="footer__text">&copy; 2024 Java Home Application. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

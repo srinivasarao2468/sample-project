@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Protected Page{% endblock %}
+
+{% block content %}
+<section class="section">
+    <h2 class="section__title">Welcome, {{ current_user }}</h2>
+    <p class="section__text">This is a protected page. You are logged in as {{ current_user }}.</p>
+    <p class="section__text"><a href="/" class="section__link">Home</a></p>
+</section>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="section">
+    <h2 class="section__title">Welcome to the Home Page</h2>
+    <p class="section__text">This is the home page of Java Home Application.</p>
+    <p class="section__text">You can navigate to:</p>
+    <ul class="section__list">
+        <li class="section__item"><a href="/signup" class="section__link">Sign Up</a></li>
+        <li class="section__item"><a href="/login" class="section__link">Login</a></li>
+        <li class="section__item"><a href="/protected" class="section__link">Protected Page</a></li>
+    </ul>
+</section>
+{% endblock %}
